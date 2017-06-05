@@ -5,7 +5,7 @@
 
 	// include
 	include "library/Rain/Tpl.php";
-	
+
 	// configure
 	$config = array(
 					"base_url"      => null,
@@ -36,7 +36,7 @@
 					"numbers"	=> array( 3, 2, 1 ),
 					"bad_text"	=> 'Hey this is a malicious XSS <script>alert(1);</script>',
 					"table"		=> array( array( "Apple", "1996" ), array( "PC", "1997" ) ),
-					"title"		=> "Rain TPL 3 - Easy and Fast template engine", 
+					"title"		=> "Rain TPL 3 - Easy and Fast template engine",
 					"copyright" => "Copyright 2006 - 2012 Rain TPL<br>Project By Rain Team",
 
 				);
@@ -47,7 +47,7 @@
                                 function( $params ){ // function called by the tag
                                     $value = $params[0];
                                     return "Translate: <b>$value</b>";
-				} 
+				}
                         );
 
 	// draw
@@ -55,5 +55,5 @@
 	$tpl->assign( $var );
 	echo $tpl->draw( "bootstrap/hero" );
 
-        
+
 ?>

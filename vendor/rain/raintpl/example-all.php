@@ -37,7 +37,7 @@
 					"numbers"	=> array( 3, 2, 1 ),
 					"bad_text"	=> 'Hey this is a malicious XSS <script>alert("auto_escape is always enabled");</script>',
 					"table"		=> array( array( "Apple", "1996" ), array( "PC", "1997" ) ),
-					"title"		=> "Rain TPL 3 - Easy and Fast template engine", 
+					"title"		=> "Rain TPL 3 - Easy and Fast template engine",
 					"copyright" => "Copyright 2006 - 2012 Rain TPL<br>Project By Rain Team",
 
 				);
@@ -48,7 +48,7 @@
 						function( $params ){ // function called by the tag
 												$value = $params[1][0];
 												return "Translate: <b>$value</b>";
-										   } 
+										   }
 					 );
 
 
@@ -69,7 +69,7 @@
 	echo $tpl->draw( "test" );
 
 
-        
+
 	class Test{
 		static public function method( $variable ){
 			echo "Hi I am a static method, and this is the parameter passed to me: $variable!";
