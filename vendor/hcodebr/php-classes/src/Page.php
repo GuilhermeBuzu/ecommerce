@@ -1,9 +1,9 @@
 <?php
 
 namespace Hcode;
-namespace Rain\Tpl;
+use Rain\Tpl;
 
-class Page {
+class Page{
 
     private $tpl;
     private $defaults = [
@@ -24,7 +24,7 @@ class Page {
 
     	Tpl::configure( $config );
 
-        $this->$tpl = new Tpl;
+        $this->tpl = new Tpl;
 
         $this->setData($this->options["data"]);
 

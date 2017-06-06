@@ -44,6 +44,7 @@ if (!extension_loaded('mcrypt')) {
  * @author  Josh Lockhart
  * @since   1.0.0
  */
+
 class Slim
 {
     /**
